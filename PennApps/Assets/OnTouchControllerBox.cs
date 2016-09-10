@@ -17,6 +17,7 @@ public class OnTouchControllerBox : MonoBehaviour {
         enterTimer++;
         if (enterTimer > 3)
         {
+            
             renderer.material.color = Color.red;
             if (menuController.nextSceneName == sceneName)
             {

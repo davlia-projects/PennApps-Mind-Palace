@@ -12,16 +12,13 @@ public class ClickMenu : MonoBehaviour {
 	void Awake()
     {
         trackedObject = GetComponent<SteamVR_TrackedObject>();
-        canvas = new Draw();
     }
 	
-	void Update () {
-       
+	void FixedUpdate () {
         var device = SteamVR_Controller.Input((int)trackedObject.index);
         if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
         {
             finishDraw++;
-            Debug.Log("Triggered");
             getPositions();
             menuController.goToSelectedLevel();
 
@@ -31,7 +28,8 @@ public class ClickMenu : MonoBehaviour {
             finishDraw = 0;
 
         }
-        
+
+
         for (int i = 0; i < 5; i++) {
             onPositionChange();
         }

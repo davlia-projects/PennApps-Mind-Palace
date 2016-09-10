@@ -70,6 +70,7 @@
     <Compile Include="Assets\ClickMenu.cs" />
     <Compile Include="Assets\ControllerPos.cs" />
     <Compile Include="Assets\Draw.cs" />
+    <Compile Include="Assets\MenuButton.cs" />
     <Compile Include="Assets\MenuController.cs" />
     <Compile Include="Assets\OnTouchControllerBox.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
