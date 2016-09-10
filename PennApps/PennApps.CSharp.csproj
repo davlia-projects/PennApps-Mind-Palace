@@ -66,13 +66,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AttachToController.cs" />
-    <Compile Include="Assets\ClickMenu.cs" />
-    <Compile Include="Assets\ControllerPos.cs" />
-    <Compile Include="Assets\Draw.cs" />
-    <Compile Include="Assets\MenuButton.cs" />
-    <Compile Include="Assets\MenuController.cs" />
-    <Compile Include="Assets\OnTouchControllerBox.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\AttachToController.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\ClickMenu.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\ControllerPos.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\Draw.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuButton.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\OnTouchControllerBox.cs" />
+    <Compile Include="Assets\Scenes\Memories\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scenes\Memories\Scripts\SphereController.cs" />
+    <Compile Include="Assets\Scenes\Memories\Scripts\SphereSpawner.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />

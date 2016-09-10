@@ -13,6 +13,6 @@ public class SphereSpawner : MonoBehaviour {
 
 	void NewSphere() {
 		Vector3 offset = Random.onUnitSphere * scale;
-		GameObject memory = Instantiate (memoryModel, this.transform.position + offset, Quaternion.identity);
+		Instantiate (memoryModel, this.transform.position + offset, Quaternion.identity);
 	}
 }
