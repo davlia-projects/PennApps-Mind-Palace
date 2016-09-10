@@ -73,7 +73,9 @@
     <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuButton.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\OnTouchControllerBox.cs" />
+    <Compile Include="Assets\Scenes\Memories\Scripts\ImageSelectorManager.cs" />
     <Compile Include="Assets\Scenes\Memories\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scenes\Memories\Scripts\PointImageSelectorToHead.cs" />
     <Compile Include="Assets\Scenes\Memories\Scripts\SphereController.cs" />
     <Compile Include="Assets\Scenes\Memories\Scripts\SphereSpawner.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />

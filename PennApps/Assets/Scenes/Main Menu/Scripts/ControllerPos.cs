@@ -21,6 +21,7 @@ public class ControllerPos : MonoBehaviour {
         if (controller == null)
         {
             Debug.Log("controller not initialized");
+			return;
         }
         buttonPress = controller.GetPress(trigger);
 	    if (buttonPress)
