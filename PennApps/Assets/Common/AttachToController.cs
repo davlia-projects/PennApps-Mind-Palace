@@ -19,7 +19,7 @@ public class AttachToController : MonoBehaviour {
             transform.rotation = attachObject.rotation;
         } catch (System.NullReferenceException exception)
         {
-            Debug.Log("Null reference!");
+            Debug.Log("Null reference!" + exception);
         }
 	}
 }

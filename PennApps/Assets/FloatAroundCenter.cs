@@ -12,7 +12,7 @@ public class FloatAroundCenter : MonoBehaviour {
 
 	void Start () {
         radius = 1.5f;
-        centerHeight = 1.0f;
+        centerHeight = 1.5f;
         amplitude = 0.4f;
         frequency = 0.7f;
         angle = Random.Range(0, 2 * Mathf.PI);

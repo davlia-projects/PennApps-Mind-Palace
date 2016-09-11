@@ -5,11 +5,12 @@ public class MoveTowardsTarget : MonoBehaviour {
 
     float speed;
     Transform targetTransform;
-    public Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
+    public Transform cameraPosition;
+    //public Vector3 origin = new Vector3(0.0f, 0.0f, 0.0f);
     public bool doMove = false;
 
     void Start () {
-        speed = 0.01f;
+        speed = 0.005f;
         targetTransform = transform.parent.Find("Target").transform;
 	}
 	
@@ -22,7 +23,7 @@ public class MoveTowardsTarget : MonoBehaviour {
 	}
     void MovePhoto()
     {
-        Vector3 normal = Vector3.Normalize(transform.position - origin);
+        Vector3 normal = Vector3.Normalize(transform.position - cameraPosition.position);
         transform.rotation = Quaternion.LookRotation(normal);
     }
 

@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 public class NextSceneSwitcher : MonoBehaviour {
     public string nextSceneName;
     SteamVR_TrackedObject trackedObject;
-    double timerStart = -1.0f;
+    double timerStart;
     double THRESHOLD = 2.0f;
     void Awake()
     {
         trackedObject = GetComponent<SteamVR_TrackedObject>();
+        timerStart = -1.0f;
     }
 
     void FixedUpdate()
@@ -17,6 +18,7 @@ public class NextSceneSwitcher : MonoBehaviour {
         var device = SteamVR_Controller.Input((int)trackedObject.index);
         if (device.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
         {
+            print("test");
             if (timerStart < -1.0f)
             {
                 timerStart = Time.time;

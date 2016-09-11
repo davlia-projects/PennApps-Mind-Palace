@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 
 //[CustomEditor(typeof(DummyButton))]
+/*
 public class HandleEditor : Editor
 {
     public float arrowSize = 1;
 
     void OnSceneGUI()
     {
-        /*DummyButton t = target as DummyButton;
+        DummyButton t = target as DummyButton;
 
         Handles.color = Color.blue;
         Handles.Label(t.transform.position + Vector3.up * 2,
@@ -29,6 +30,6 @@ public class HandleEditor : Editor
 
         t.shieldArea = Handles.ScaleValueHandle(t.shieldArea,
         t.transform.position + t.transform.forward * t.shieldArea,
-        t.transform.rotation, 1, Handles.ConeCap, 1);*/
+        t.transform.rotation, 1, Handles.ConeCap, 1);
     }
-}
+}*/
