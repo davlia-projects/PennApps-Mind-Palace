@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Common\AttachToController.cs" />
+    <Compile Include="Assets\FloatAroundCenter.cs" />
+    <Compile Include="Assets\MoveTowardsTarget.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\ClickMenu.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\ControllerPos.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\Draw.cs" />
@@ -115,6 +117,7 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Common\glass.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />

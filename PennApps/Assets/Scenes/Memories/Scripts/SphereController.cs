@@ -16,6 +16,7 @@ public class SphereController : MonoBehaviour {
 	void Update () {
         foreach (GameObject memory in memories) {
             Movement move = memory.GetComponent<Movement>();
+            move.origin = transform.position;
             move.Move();
         }
     }

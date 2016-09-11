@@ -9,17 +9,19 @@ public class SphereSpawner : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		InvokeRepeating ("NewSphere", 1, 2);
+		//InvokeRepeating ("NewSphere", 1, 2);
 		this.radius = 2.0f;
 	}
 
-	void NewSphere() {
+	public GameObject NewSphere() {
 
         Vector3 randomLoc = Random.onUnitSphere;
         randomLoc.y = Mathf.Abs(randomLoc.y);
         Vector3 offset = randomLoc * radius;
 		GameObject memory = Instantiate (memoryModel, this.transform.position + offset, Quaternion.identity) as GameObject;
         memories.Add(memory);
+        //memory.transform.SetParent(this.transform);
+        return memory;
 	}
 
     public void Test() {
