@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{A0A8974E-3FF8-3278-9A17-128E5CE5BC33}") = "PennApps", "Assembly-CSharp-firstpass.csproj", "{832D80F4-7253-13FF-B609-E8FC21FA7C31}"
+EndProject
 Project("{A0A8974E-3FF8-3278-9A17-128E5CE5BC33}") = "PennApps", "Assembly-CSharp.csproj", "{53090E22-3147-F903-3DC0-8391FB5192D6}"
 EndProject
 Project("{A0A8974E-3FF8-3278-9A17-128E5CE5BC33}") = "PennApps", "Assembly-CSharp-Editor.csproj", "{0A01F3C1-A365-3D10-49B7-FD0A341988AE}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{832D80F4-7253-13FF-B609-E8FC21FA7C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832D80F4-7253-13FF-B609-E8FC21FA7C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832D80F4-7253-13FF-B609-E8FC21FA7C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832D80F4-7253-13FF-B609-E8FC21FA7C31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53090E22-3147-F903-3DC0-8391FB5192D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53090E22-3147-F903-3DC0-8391FB5192D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53090E22-3147-F903-3DC0-8391FB5192D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
