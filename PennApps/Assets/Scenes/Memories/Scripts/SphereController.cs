@@ -14,10 +14,10 @@ public class SphereController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        foreach (GameObject memory in memories) {
+        /*foreach (GameObject memory in memories) {
             Movement move = memory.GetComponent<Movement>();
             move.origin = transform.position;
             move.Move();
-        }
+        }*/
     }
 }

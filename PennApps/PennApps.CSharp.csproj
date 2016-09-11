@@ -68,10 +68,13 @@
   <ItemGroup>
     <Compile Include="Assets\Common\AttachToController.cs" />
     <Compile Include="Assets\FloatAroundCenter.cs" />
+    <Compile Include="Assets\MemorySphereController.cs" />
     <Compile Include="Assets\MoveTowardsTarget.cs" />
+    <Compile Include="Assets\NextSceneSwitcher.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\ClickMenu.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\ControllerPos.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\Draw.cs" />
+    <Compile Include="Assets\Scenes\Main Menu\Scripts\HandleEditor.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuButton.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scenes\Main Menu\Scripts\OnTouchControllerBox.cs" />

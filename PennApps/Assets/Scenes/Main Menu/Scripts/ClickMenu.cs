@@ -16,11 +16,13 @@ public class ClickMenu : MonoBehaviour {
 	
 	void FixedUpdate () {
         var device = SteamVR_Controller.Input((int)trackedObject.index);
+        Debug.Log("Trigger");
         if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
         {
             finishDraw++;
             getPositions();
             menuController.goToSelectedLevel();
+            
 
         }
         else if (device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger))
