@@ -9,18 +9,19 @@ public class ImageSelectorManager : MonoBehaviour {
     public SphereSpawner sphereSpawner;
 
     MemorySphereController memoryController = null;
-    Texture2D texture = new Texture2D(2, 2);
+    Texture2D texture;
     int textureIndex = -1;
     
     ArrayList textures = new ArrayList();
 
     void Awake()
     {
+        texture = new Texture2D(2, 2);
         var directoryInfo = new DirectoryInfo(directoryPath);
         FileInfo[] fileInfo = directoryInfo.GetFiles();
         foreach (FileInfo file in fileInfo)
         {
-            if (file.Extension == ".jpg")
+            if (file.Extension == ".jpg" || file.Extension == ".png")
             {
                 Texture2D newTexture = new Texture2D(2, 2);
                 newTexture.LoadImage(File.ReadAllBytes(file.FullName));
@@ -85,6 +86,8 @@ public class ImageSelectorManager : MonoBehaviour {
             memoryController.ReleaseFromController();
             memoryController = null;
             GetComponent<Renderer>().enabled = true;
+            textureIndex = (textureIndex + 1) % textures.Count;
+            UpdateTexture();
         }
     }
     void UpdateTexture()

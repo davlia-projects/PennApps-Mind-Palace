@@ -12,9 +12,16 @@ public class PointImageSelectorToHead : MonoBehaviour {
         if (cameraEye != null && controller != null)
         {
             Transform cameraLocation = cameraEye.GetComponent<Transform>();
-            Transform controllerLocation = controller.transform.Find("tip").transform.Find("attach").GetComponent<Transform>();
-            transform.position = controllerLocation.position;
-            transform.rotation = controllerLocation.rotation;
+            Transform tip = controller.transform.Find("tip");
+            if (tip != null)
+            {
+                Transform controllerLocation = tip.Find("attach");
+                if (controllerLocation != null)
+                {
+                    transform.position = controllerLocation.position;
+                    transform.rotation = controllerLocation.rotation;
+                }
+            }
         }
     }
 }

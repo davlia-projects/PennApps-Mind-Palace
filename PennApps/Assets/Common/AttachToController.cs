@@ -14,9 +14,13 @@ public class AttachToController : MonoBehaviour {
 	void Update () {
         try
         {
-            Transform attachObject = vrControllerModel.transform.Find("tip").transform.Find("attach");
-            transform.position = attachObject.position;
-            transform.rotation = attachObject.rotation;
+            Transform tip = vrControllerModel.transform.Find("tip");
+            if (tip != null)
+            {
+                Transform attachObject = tip.Find("attach");
+                transform.position = attachObject.position;
+                transform.rotation = attachObject.rotation;
+            }
         } catch (System.NullReferenceException exception)
         {
             Debug.Log("Null reference!" + exception);
